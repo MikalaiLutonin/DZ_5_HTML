@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./font/Gilroy-Bold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./font/Gilroy-Medium.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./font/Gilroy-Regular.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("./font/Gilroy-Semibold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* убирает атрибуты, например, подчеркивание у ссылок*/
+}
+
+body {
+  scroll-behavior: smooth;
+  /*создает плавность прокрутки страницы*/
+  background: #ffffff;
+  /*цвет фона по умолчанию*/
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  /* превращает картинку в блочный элемент. Аналог <div> */
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  gap: 500px;
+  /*отфлексили по горизонтали и добавили пробелов*/
+  padding-top: 45px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  /*0 - сверху и снизу, а справа-слево - высчитывает автоматически, и центрирует по центру по горизонтали*/
+}
+
+.menu_navigation {
+  width: 533px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+  font-family: Gilroy-SemiBold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  font-size: 16px;
+  line-height: 22px;
+  /*стилизация ссылок а класса navigation */
+}
+
+.navigation a:nth-child(1) {
+  color: #f25822;
+}
+/* псевдоселектор, назназначаем новые свойства первому элементу */
+
+.main-content {
+  display: flex; /*выстроил по горизонтали два элемента: контент и картинку*/
+  gap: 41px;
+  /*отфлексили блок main*/
+  margin-top: 89px;
+  margin-bottom: 259px;
+}
+
+.main-content_btn-list {
+  display: flex; /*выстроил по горизонтали два элемента: контент и картинку*/
+  gap: 72px;
+  max-width: 374px;
+  margin-top: 37px;
+}
+
+.main-content_btn_Start {
+  color: #ffffff;
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 17.58px;
+  padding: 15px 36px 16px 35px;
+  border-radius: 50px;
+  background: #f25822;
+  border: none; /*отключает рамочку у кнопки*/
+  cursor: pointer; /*меняет курсор при наведении, т.е. понятно что это кнопка и она кликабельна*/
+}
+
+.main-content_btn_Watch {
+  color: #aaaaaa;
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 17.58px;
+  background: #ffffff;
+  border: none; /*отключает рамочку у кнопки*/
+  cursor: pointer; /*меняет курсор при наведении, т.е. понятно что это кнопка и она кликабельна*/
+}
+
+.main-content_wrapper p {
+  color: #888888;
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  line-height: 23.44px;
+  max-width: 466px; /*задает длину блока*/
+  margin-top: 17px;
+}
+
+.main-content_wrapper h1 {
+  color: #000000;
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  line-height: 70.31px;
+  max-width: 522px; /*задает длину блока*/
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.cards_list {
+  margin-top: 100px;
+  margin-bottom: 125px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*делит на 3 фракции столбцы*/
+  gap: 30px;
+}
+
+.card {
+  padding-left: 30px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.card h3 {
+  padding-top: 25px;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+}
+
+.card p {
+  padding-top: 17px;
+  color: #666;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  line-height: 150%; /* 22.5px */
+  max-width: 310px;
+}
+
+.card a {
+  padding: 25px 0px;
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 11px;
+  line-height: 150%; /* 16.5px */
+}
+
+.green_card {
+  background: #fff;
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.background {
+  background: #fafafa;
+}
+
+.choose_us h3 {
+  font-family: Gilroy-Bold;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 92px;
+}
+
+.choose_us p {
+  color: #666;
+  max-width: 682px;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  padding-top: 19px;
+  margin: 0 auto;
+}
+
+.cards_choose {
+  padding-top: 55px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*делит на 3 фракции столбцы*/
+  gap: 30px;
+
+}
+
+.cards_choose h3 {
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.cards_choose p {
+  color: #aaa;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  line-height: 150%; /* 22.5px */
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+
+.card_keywordResearch {
+background-color: white;
+}
+
+.card_keywordResearch h3 {
+  padding-top: 15px;
+}
+
+
+.card_SeoOptimizadion {
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card_SotialMarketing {
+background-color: white;
+}
+
+.btn_LearnMore {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy-Bold;
+  font-size: 13px;
+  line-height: 150%; /* 19.5px */
+  margin-top: 39px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  background: #f25822;
+  border: none; /*отключает рамочку у кнопки*/
+  cursor: pointer; /*меняет курсор при наведении, т.е. понятно что это кнопка и она кликабельна*/
+}
